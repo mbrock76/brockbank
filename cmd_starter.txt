@@ -1,0 +1,7 @@
+cd p0\build\classes\java\main
+
+java -cp .;C:\Users\Brock\p0\jdbc\postgresql-42.3.3.jar com.revature.Main
+
+java -cp .;C:\Users\Brock\p0\jdbc\mysql-connector-java-8.0.28.jar com.revature.Main
+
+
