@@ -2,8 +2,8 @@ package com.revature;
 
 import com.revature.service.*;
 import com.revature.model.*;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 import java.util.regex.*;

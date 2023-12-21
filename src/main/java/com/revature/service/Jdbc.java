@@ -18,8 +18,8 @@ public class Jdbc {
 
         try{
             myjdbc = DriverManager.getConnection(
-                    "",
-                    "", "");
+                    "jdbc:mysql://localhost:3306/project0",
+                    "mbrock76", "H@rk0n3n_76");
 
         }catch (Exception e){
             e.printStackTrace();
@@ -32,6 +32,7 @@ public class Jdbc {
         try{
             PreparedStatement mystmt = myjdbc.prepareStatement("SELECT * FROM users WHERE username =?");
             mystmt.setString(1, myUsername);
+            System.out.println("asdf");
             ResultSet myresult = mystmt.executeQuery();
 
 
@@ -51,23 +52,6 @@ public class Jdbc {
 
         return myuser;
     }
-
-//    public static void getStudent(){
-//
-//        User mystudent = null;
-//        try{
-//            PreparedStatement mystmt = myjdbc.prepareStatement("SELECT * FROM students WHERE student_id =1");
-//            ResultSet myresult = mystmt.executeQuery();
-//
-//
-//            if(myresult.next()){
-//                System.out.println(myresult.getString("first_name"));
-//            }
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
-//
-//    }
 
     public static User createUser(String myUsername, String myPassword){
 
