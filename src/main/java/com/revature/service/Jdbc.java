@@ -18,8 +18,8 @@ public class Jdbc {
 
         try{
             myjdbc = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/project0",
-                    "mbrock76", "H@rk0n3n_76");
+                    "",
+                    "", "");
 
         }catch (Exception e){
             e.printStackTrace();
